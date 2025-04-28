@@ -1,5 +1,10 @@
 # main.py
 
+import add
+import subtract
+import multiply
+import divide
+
 def main():
     print("Simple Calculator")
     print("1. Addition")
@@ -12,13 +17,13 @@ def main():
     b = int(input("Enter second number: "))
     
     if choice == 1:
-        pass  # To be completed
+        print("Result:", add.add(a, b))
     elif choice == 2:
-        pass
+        print("Result:", subtract.subtract(a, b))
     elif choice == 3:
-        pass
+        print("Result:", multiply.multiply(a, b))
     elif choice == 4:
-        pass
+        print("Result:", divide.divide(a, b))
     else:
         print("Invalid Choice!")
 
